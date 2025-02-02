@@ -1,0 +1,586 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* nav styling start */
+.nav {
+    padding-top: 5px;
+    margin-bottom: 15px;
+}
+
+.nav .parent_nav .nav_logo {
+    height: 51px;
+    width: 99px;
+}
+
+.nav .parent_nav .nav_logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav .parent_nav .nav_area,
+.nav .parent_nav .nav_area ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 22px;
+}
+
+.nav .parent_nav .nav_area ul li a {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.38px;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 66px;
+    padding: 8px 10px 9px 9px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav .parent_nav .nav_area>a {
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20.68px;
+    text-decoration: none;
+    padding: 8px 10px 9px 9px;
+    color: #fff;
+    background: linear-gradient(90deg, #FF3C0C 0%, #FF8668 100%);
+    border-radius: 66px;
+}
+
+.nav .parent_nav .nav_area ul li a:hover,
+.nav .parent_nav .nav_area ul li a:active {
+    transition: all 0.5s ease;
+    color: #FF4010;
+    background: linear-gradient(90deg, rgba(255, 60, 12, 0.15) 0%, rgba(255, 134, 104, 0.15) 100%);
+}
+
+/* nav styling end */
+
+/* hero styling start */
+.hero {
+    margin-bottom: 110px;
+}
+
+.hero .parent_hero {
+    position: relative;
+    background: radial-gradient(50% 50% at 50% 50%, #45210E 0%, #2A1307 100%);
+    padding: 131px 46px 81px 46px;
+    border-radius: 30px;
+}
+
+.hero .parent_hero::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 447px;
+    height: 523px;
+    top: 50px;
+    left: 605px;
+    border-radius: 223.5px 223.5px 0px 0px;
+    background: radial-gradient(50.1% 50.1% at 51.12% 49.9%, #4D3438 0%, #261104 100%)
+}
+
+.hero .parent_hero::after {
+    content: "";
+    background-image: url("./images/girl_eatin_pizza.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 452px;
+    height: 454px;
+    top: 119px;
+    left: 584px;
+}
+
+.hero .parent_hero .inner_parent_hero {
+    width: 45%;
+    max-width: 100%;
+}
+
+.hero .parent_hero .inner_parent_hero h3 {
+    font-family: Ubuntu;
+    font-size: 48.07px;
+    font-weight: 500;
+    line-height: 55.23px;
+    color: white;
+    margin-bottom: 34px;
+}
+
+.hero .parent_hero .inner_parent_hero h3 span {
+    font-family: Ubuntu;
+    font-size: 48.07px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 55.23px;
+    color: #FF4010;
+
+}
+
+.hero .parent_hero .inner_parent_hero p {
+    color: #9AA1A7;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.16px;
+    margin-bottom: 67px;
+}
+
+.hero .parent_hero .inner_parent_hero .btns {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.hero .parent_hero .inner_parent_hero .btns a:first-child {
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20.68px;
+    text-decoration: none;
+    padding: 8px 10px 9px 9px;
+    color: #fff;
+    background: linear-gradient(90deg, #FF3C0C 0%, #FF8668 100%);
+    border-radius: 66px;
+}
+
+.hero .parent_hero .inner_parent_hero .btns a:last-child {
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20.68px;
+    color: white;
+    text-decoration: none;
+}
+
+.hero .parent_hero .survey {
+    background-color: white;
+    padding: 23px;
+    width: 197px;
+    border-radius: 15px;
+    position: absolute;
+    top: 119px;
+    right: 51px;
+}
+
+.hero .parent_hero .survey .inner_survey {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    background-color: white;
+}
+
+.hero .parent_hero .survey .inner_survey .inner_inner_survey p {
+    font-family: Ubuntu;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    color: #231618;
+    margin-bottom: 0;
+}
+
+.hero .parent_hero .survey .inner_survey .inner_inner_survey p span {
+    color: #FF4314;
+}
+
+.hero .parent_hero .survey .inner_survey .people .inner_people {
+    display: flex;
+    align-items: center;
+
+}
+
+.hero .parent_hero .survey .inner_survey .people .inner_people :is(.image_1, .image_2, .image_3) {
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+    line-height: 10px;
+    border: 1px solid #FFFFFF;
+    position: relative;
+}
+
+.hero .parent_hero .survey .inner_survey .people .inner_people .image_2 {
+    left: -10px;
+}
+
+.hero .parent_hero .survey .inner_survey .people .inner_people .image_3 {
+    left: -20px;
+}
+
+.hero .parent_hero .survey .inner_survey .people .inner_people :is(.image_1, .image_2, .image_3)>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .parent_hero .survey p {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #26181A;
+    margin-bottom: 0;
+}
+
+.hero .parent_hero .graph {
+    position: absolute;
+    bottom: 81px;
+    right: 100px;
+    z-index: 1;
+}
+
+.hero .parent_hero .graph .inner_graph {
+    background-color: #fff;
+    width: 197px;
+    border-radius: 15px;
+    padding: 23px;
+}
+
+.hero .parent_hero .graph .inner_graph .inner_inner_graph {
+    margin-bottom: 15px;
+}
+
+.hero .parent_hero .graph .inner_graph p:first-child {
+    font-family: Ubuntu;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    margin-bottom: 0;
+
+}
+
+.hero .parent_hero .graph .inner_graph p span {
+    color: #FF3F0F;
+}
+
+.hero .parent_hero .graph .inner_graph p:last-child {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+/* hero styling end */
+
+/* partner styles start */
+.partner {
+    margin-bottom: 142px;
+}
+
+.partner .parent_partner h3 {
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45.96px;
+    color: #FF3F10;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.partner .parent_partner ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    gap: 82px;
+    padding: 0;
+    margin: 0;
+}
+
+.partner .parent_partner ul li {
+    height: 113px;
+    width: 113px;
+    overflow: hidden;
+}
+
+.partner .parent_partner ul li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale();
+    transition: all 0.5s ease;
+}
+
+.partner .parent_partner ul li a img:hover {
+    filter: unset;
+}
+
+
+
+
+/* partner styles end */
+
+/* left_right styles start */
+.left_right .parent_left_right {
+    padding: 72px 16px;
+    border-radius: 54px 54px 0 0;
+    background: linear-gradient(180deg, #F6F6F6 0%, rgba(255, 255, 255, 0) 100%);
+    /* background: rgb(206, 156, 156); */
+}
+
+.left_right .parent_left_right .side_image {
+    height: 456px;
+    overflow: hidden;
+    border-radius: 37px;
+    border: 12px solid white;
+    box-shadow: 0px 36px 65px 0px #FF3F101A;
+
+}
+
+.left_right .parent_left_right .side_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.left_right .parent_left_right .side_image img:hover {
+    transform: scale(1.01);
+}
+
+.left_right .parent_left_right .side_content {
+    padding-top: 77px;
+    padding-left: 116px;
+}
+
+.left_right .parent_left_right .side_content h3 {
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47.5px;
+    color: #FF3F10;
+    margin-bottom: 31px;
+}
+
+.left_right .parent_left_right .side_content p {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.16px;
+    color: #414E59;
+    margin-bottom: 68px;
+}
+
+.left_right .parent_left_right .side_content a {
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20.68px;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px 15px 20px;
+    border-radius: 66px;
+    background: linear-gradient(90deg, #FF3C0C 0%, #FF8668 100%);
+    box-shadow: 0px 4px 8px 0px #00000014 inset;
+}
+
+.left_right.even .parent_left_right {
+    border-radius: 0 0 54px 54px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F6F6F6 100%);
+
+}
+
+.left_right.even .parent_left_right .side_content {
+    padding-top: 77px;
+    padding-left: 0;
+    padding-right: 116px;
+}
+
+.left_right.even {
+    margin-bottom: 142px;
+}
+
+/* left_right styles end */
+
+
+
+/* pain points style start */
+.pain_points {
+    margin-bottom: 165px;
+}
+
+.pain_points .parent_pain_points {
+    position: relative;
+    z-index: 2;
+}
+
+.pain_points .background {
+    padding: 80px 90px 26px 90px;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(50% 50% at 50% 50%, #45210E 0%, #2A1307 100%);
+}
+
+.pain_points .background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/before.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 9%;
+    mix-blend-mode: color-dodge;
+
+}
+
+.pain_points .parent_pain_points .pain_points_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    margin-bottom: 48px;
+}
+
+.pain_points .parent_pain_points .pain_points_title .bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pain_points .parent_pain_points .pain_points_title .bar .line {
+    width: 48px;
+    height: 0;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.pain_points .parent_pain_points .pain_points_title .bar .dot {
+    width: 1px;
+    height: 0;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.pain_points .parent_pain_points .pain_points_title .title h3 {
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 47.5px;
+    color: #FF4618;
+    margin-bottom: 0;
+}
+
+.pain_points .parent_pain_points h3 {
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47.5px;
+    color: white;
+    text-align: center;
+    margin-bottom: 67px;
+
+}
+
+.pain_points .parent_pain_points .slider {
+    width: 793px;
+    margin: auto;
+    max-width: 100%;
+    margin-bottom: 100px;
+}
+
+.pain_points .parent_pain_points .slider .item .inner_item {
+    position: relative;
+}
+
+.pain_points .parent_pain_points .slider .item .inner_item::before {
+    content: "";
+    width: 111px;
+    transform: rotate(90deg);
+    position: absolute;
+    border: 2px solid #9AA1A76E;
+    top: 135px;
+    right: -100px;
+}
+
+.pain_points .parent_pain_points .slider .item .inner_item h4 {
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 47.5px;
+    color: #FF3F10;
+    margin-bottom: 17px;
+}
+
+.pain_points .parent_pain_points .slider .item .inner_item p {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.16px;
+    color: #9AA1A7;
+    margin-bottom: 0;
+}
+
+.owl-carousel .owl-dots {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    position: absolute;
+    left: -131px;
+    bottom: -100px;
+}
+
+.owl-carousel .owl-nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    position: absolute;
+    /* top: 484px; */
+    right: -131px;
+    bottom: -100px;
+}
+
+button.owl-prev span,
+button.owl-next span {
+    display: none;
+}
+
+button.owl-prev::before {
+    content: "\f053";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    color: #FF4214;
+
+}
+
+button.owl-next::before {
+    content: "\f054";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    color: #FF7B5A;
+
+}
+
+.owl-dots .owl-dot {
+    display: none;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 47.5px;
+    color: white;
+    cursor: unset;
+}
+
+.owl-dots .owl-dot.active {
+    display: block;
+}
+.owl-dots .owl-dot span{
+    color: #FF3F10;
+}
+
+/* pain points style end */
